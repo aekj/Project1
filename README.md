@@ -107,3 +107,15 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running? http://[ELK.VM.IP]:5601/app/kibana  (http://20.219.50.82:5601/app/kibana)
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- ssh sysadmin@JumpBox(Public IP)
+- sudo docker container list -a (locate your ansible container)
+- sudo docker start container (name of the container)
+- sudo docker attach container (name of the container)
+- cd /etc/ansible
+- curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat >> /etc/ansible/filebeat-config.yml
+- nano hosts
+- nano ansible.cfg
+- ansible-playbook /etc/ansible/(name of the yml file).yml 
+- ansible all -m ping
+- 
+- 
