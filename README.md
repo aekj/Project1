@@ -100,7 +100,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the ansible.cfg file to ~/etc/ansible.
 - Update theUpdate the the configuration file to include the webservers and ElkVM (private Ip address).
-- Run the playbook, and navigate tohttp://[ELK.VM.IP]:5601/app/kibana (http://20.219.50.82:5601/app/kibana) to check that the installation worked as expected.
+- Run the playbook, and navigate to http://[ELK.VM.IP]:5601/app/kibana (http://20.219.50.82:5601/app/kibana) to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_/etc/ansible/file/filebeat-configuration.yml
