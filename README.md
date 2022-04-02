@@ -74,7 +74,8 @@ The playbook implements the following tasks:
 2. Install python3-pip
 3. Install Docker module
 4. Increase virtual memory
-5. Download and launch a docker elk container
+5. Use more memory
+6. Download and launch a docker elk container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -92,7 +93,7 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects linux logs. This allows us to track things like user logon events, failed access attempts, service starts and stops.
 - Metricbeat collects system metrics from the web servers. We look for things like cpu usage, memory usage, drive space usage and drive space available for each host.
-- 
+
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
@@ -117,5 +118,3 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 - nano ansible.cfg
 - ansible-playbook /etc/ansible/(name of the yml file).yml 
 - ansible all -m ping
-- 
-- 
